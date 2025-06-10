@@ -1,12 +1,16 @@
-# React + Vite
+## SkipShop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live demo →** https://skipshop.netlify.app/
 
-Currently, two official plugins are available:
+A tiny React + Vite storefront proof-of-concept built from reusable components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+| What | How |
+|------|-----|
+| Core UI | `SkipCard` (product card), `BottomSheet` (portal slide-up modal), `SkipSelector` (stateful grid) |
+| Styling | Tailwind utilities, custom `animate-slideUp` key-frame, green accent palette |
+| UX polish | Hover-lift cards, focus rings, scroll-lock on modal open (removed on close) |
+| Build | `npm run build` → optimized bundle in `dist/` |
+| Git | Local init → `git remote add origin` → pull/force-push to sync, `.gitignore` keeps `node_modules` & `dist` out |
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Feel free to drop that into your `README.md` so visitors can click straight to the deployed site.
+::contentReference[oaicite:0]{index=0}
